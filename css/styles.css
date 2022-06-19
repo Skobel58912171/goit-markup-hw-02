@@ -1,0 +1,52 @@
+/* цвет вторичного текста #212121; */
+/* цвет основного текста #757575; */
+/* белый #FFFFFF; */
+/* акцент #2196F3;*/
+/* цвет адреса rgba(255, 255, 255, 0.6); */
+/* цвет основного фона #FFFFFF; */
+/* цвет logo #000000 */
+/* цвет фона героя и подвала #2F303A; */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --accent-white-color: #rgba(255, 255, 255, 0.6);
+    --primary-white-color: #FFFFFF;
+}
+    
+body {
+  color: var(--primary-text-color); 
+  background-color: #FFFFFF; 
+}
+
+.logo {
+    color: #000000;
+}
+span {
+    color: #2196F3;
+}
+
+/* site nav */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+
+/* hero */
+.hero-title{
+    color: var(--primary-white-color);
+    background-color: #2F303A; 
+} 
+
+/* section */
+.section-title{
+    color: var(--title-text-color);
+}
+
+.feature-list .title{
+    color: var(--title-text-color);
+}
