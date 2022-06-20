@@ -36,6 +36,16 @@ span {
     color: var(--accent-color);
 }
 
+/* contacts */
+.list-contacts .link{
+    color: var(--primary-text-color);
+}
+.list-contacts .link:hover,
+.list-contacts .link:focus{
+    color: var(--accent-color);
+}
+
+
 /* hero */
 .hero-title{
     color: var(--primary-white-color);
@@ -48,5 +58,9 @@ span {
 }
 
 .feature-list .title{
+    color: var(--title-text-color);
+}
+
+.team-list .title{
     color: var(--title-text-color);
 }
