@@ -26,7 +26,7 @@ body {
 .logo {
     color: #000000;
 }
-span {
+.logo span {
     color: var(--accent-color);
 }
 
@@ -36,7 +36,8 @@ span {
 }
 
 .site-nav .link:hover, 
-.site-nav .link:focus{
+.site-nav .link:focus,
+.link.current{
     color: var(--accent-color);
 }
 
@@ -82,6 +83,10 @@ span {
 .footer .link {
     color: var(--accent-white-color);
 }
+.footer .link:hover,
+.footer .link:focus{
+    color:var(--accent-color);
+}
 
 button{
     color: var(--title-text-color);
@@ -89,7 +94,8 @@ button{
 }
 
 button:hover,
-button:focus{
+button:focus,
+.button-current{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
@@ -99,3 +105,8 @@ button:focus{
     background-color: var(--accent-color);
 }
     
+/* portfolio */
+
+.project-list .title{
+    color: var(--title-text-color);
+}
