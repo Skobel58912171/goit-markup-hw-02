@@ -6,24 +6,28 @@
 /* цвет основного фона #FFFFFF; */
 /* цвет logo #000000 */
 /* цвет фона героя и подвала #2F303A; */
+/* цвет фона кнопки #F5F4FA; */
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --accent-white-color: #rgba(255, 255, 255, 0.6);
     --primary-white-color: #FFFFFF;
+    --button-bg-color: #F5F4FA;
+    --secondary-bg-color:#2F303A;;
+    
 }
     
 body {
   color: var(--primary-text-color); 
-  background-color: #FFFFFF; 
+  background-color: var(--primary-white-color); 
 }
 
 .logo {
     color: #000000;
 }
 span {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* site nav */
@@ -49,18 +53,49 @@ span {
 /* hero */
 .hero-title{
     color: var(--primary-white-color);
-    background-color: #2F303A; 
+    background-color: var(--secondary-bg-color); 
 } 
 
 /* section */
-.section-title{
+.section-title {
     color: var(--title-text-color);
 }
 
-.feature-list .title{
+.feature-list .title {
     color: var(--title-text-color);
 }
 
-.team-list .title{
+.team-list .title {
     color: var(--title-text-color);
 }
+
+/* address*/
+.footer {
+    color: var(--primary-white-color);
+    background-color: var(--secondary-bg-color);
+}
+
+.footer .logo {
+    color: var(--primary-white-color);
+}
+
+.footer .link {
+    color: var(--accent-white-color);
+}
+
+button{
+    color: var(--title-text-color);
+    background-color: var(--button-bg-color);
+}
+
+button:hover,
+button:focus{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.hero button{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+    
