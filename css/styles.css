@@ -1,12 +1,12 @@
 /* цвет вторичного текста #212121; */
 /* цвет основного текста #757575; */
-/* белый #FFFFFF; */
 /* акцент #2196F3;*/
 /* цвет адреса rgba(255, 255, 255, 0.6); */
 /* цвет основного фона #FFFFFF; */
 /* цвет logo #000000 */
 /* цвет фона героя и подвала #2F303A; */
 /* цвет фона кнопки и команды# F5F4FA; */
+/* цвет фона кнопки героя 188CE8; */
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -16,15 +16,14 @@
     --bg-color: #F5F4FA;
     --footer-bg-color:#2F303A;
     --logo-text-color: #000000;
-    --secondary-bg-color: #E5E5E5;
+    --button-bg-color: #188CE8;
 }
     
 body {
   color: var(--primary-text-color); 
   background-color: var(--primary-white-color);
   font-family: 'Roboto',sans-serif;
-  letter-spacing: 0.03em;;
-}
+  }
 
 .list{
     list-style: none ;
@@ -37,6 +36,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    letter-spacing: 0.03em;
 }
 
 .logo span {
@@ -89,14 +89,13 @@ body {
 } 
 
 /* section */
-.section{
-    background-color: var(--secondary-bg-color);
-}
+
 .section-title {
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    letter-spacing: 0.03em;
  }
 
 .feature .title {
@@ -104,12 +103,14 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 .feature .text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .team{
@@ -120,12 +121,14 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 .team .text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19px;
+    letter-spacing: 0.03em;
 }
 /* address*/
 .footer {
@@ -138,6 +141,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
     
 .footer .logo {
@@ -179,11 +183,14 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
 }
+
+.hero .button:hover,
+.hero .button:focus{
+    background-color:var(--button-bg-color)
+}
+
     
 /* portfolio */
-.portfolio{
-    background-color: var(--secondary-bg-color);
-}
 .project .title{
     color: var(--title-text-color);
     font-size: 18px;
@@ -191,9 +198,16 @@ body {
     letter-spacing: 0.06em;
 }
 
-.project .text{
+.project .text {
+    color: var(--primary-text-color);
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.03em;
+    
+}
+
+.project .link {
+    text-decoration: none;
 }
